@@ -1,11 +1,20 @@
-# Project:	Wellness Wave
-> Desc:         Desktop app to help people with mental-health challenges
+# Program:
+> Description: 
 - Started:
 - Updated: 
+- Developers: 
+	* 
 - Status:	work-in-progress
 ---
 
-## More notes 
+
+## More details about the application
+- 
+---
+
+**More notes**
 - temp
 ---
 
+
+### Screenshots
