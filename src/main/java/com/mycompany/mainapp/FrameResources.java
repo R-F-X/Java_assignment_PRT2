@@ -1,20 +1,18 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package com.mycompany.mainapp;
 
-/**
- *
- * @author simple-coding-setup
- */
+import java.awt.Color;
+import java.awt.Desktop;
+import java.awt.Toolkit;
+import java.io.IOException;
+import javax.swing.JLabel;
+
+
 public class FrameResources extends javax.swing.JFrame {
 
-    /**
-     * Creates new form FrameResources
-     */
     public FrameResources() {
         initComponents();
+//        this.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("icons/profile.png")));
     }
 
     /**
@@ -26,63 +24,127 @@ public class FrameResources extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jLabel1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
-        jScrollBar1 = new javax.swing.JScrollBar();
+        jLabel2 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        resource1 = new javax.swing.JLabel();
+        resource2 = new javax.swing.JLabel();
+        resource3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Resources");
+        setResizable(false);
 
-        jLabel1.setText("jLabel1");
-        jScrollPane1.setViewportView(jLabel1);
+        jPanel1.setBackground(new java.awt.Color(150, 185, 12));
 
-        jPanel1.setBackground(new java.awt.Color(153, 0, 153));
+        jLabel2.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 36)); // NOI18N
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("Resources");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 219, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(280, Short.MAX_VALUE)
+                .addComponent(jLabel2)
+                .addGap(269, 269, 269))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(36, 36, 36)
+                .addComponent(jLabel2)
+                .addContainerGap(39, Short.MAX_VALUE))
+        );
+
+        jPanel2.setBackground(new java.awt.Color(8, 36, 1));
+
+        resource1.setBackground(new java.awt.Color(8, 36, 1));
+        resource1.setForeground(new java.awt.Color(255, 255, 255));
+        resource1.setText("resource1");
+        resource1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        resource1.setOpaque(true);
+        resource1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                resource1MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                resource1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                resource1MouseExited(evt);
+            }
+        });
+
+        resource2.setBackground(new java.awt.Color(8, 36, 1));
+        resource2.setForeground(new java.awt.Color(255, 255, 255));
+        resource2.setText("resource2");
+        resource2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        resource2.setOpaque(true);
+
+        resource3.setBackground(new java.awt.Color(8, 36, 1));
+        resource3.setForeground(new java.awt.Color(255, 255, 255));
+        resource3.setText("resource3");
+        resource3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        resource3.setOpaque(true);
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(32, 32, 32)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(resource2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 72, Short.MAX_VALUE)
+                    .addComponent(resource1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(resource3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(34, 34, 34)
+                .addComponent(resource1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(resource2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(resource3)
+                .addContainerGap(277, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 262, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollBar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 197, Short.MAX_VALUE)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(54, 54, 54)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jScrollPane1)
-                            .addComponent(jScrollBar1, javax.swing.GroupLayout.DEFAULT_SIZE, 417, Short.MAX_VALUE))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    /**
-     * @param args the command line arguments
-     */
+    private void resource1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_resource1MouseClicked
+        String url = "https://github.com/RFX";
+        this.openURL(url);
+    }//GEN-LAST:event_resource1MouseClicked
+
+    private void resource1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_resource1MouseEntered
+       this.onHoverLink(resource1);
+    }//GEN-LAST:event_resource1MouseEntered
+
+    private void resource1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_resource1MouseExited
+        this.offHoverLink(resource1);
+    }//GEN-LAST:event_resource1MouseExited
+
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -114,11 +176,53 @@ public class FrameResources extends javax.swing.JFrame {
             }
         });
     }
+    
+    // ==========================================
+    // CUSTOM CODE
+    
+       // add custom icon
+//     private void setIconImage() {
+//       setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("images/icons8-url-96.png")));
+//    }
+//     
+    private void setIconImage() {
+//        String icon = "icons\\profile.png";
+//        String icon = "icons/profile.png";
+
+//        String icon = "//    C:\\Users\\simple-coding-setup\\Documents\\programming\\PRT2\\MainApp\\src\\main\\java\\com\\mycompany\\mainapp\\icons\\profile.png\n";
+
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("icons/profile.png")));
+    }
+    
+    
+    private void openURL(String url){
+//        String url = "https://competent-coding.netlify.app";
+        
+        // opening url
+        Desktop desktop =  Desktop.getDesktop();
+        try{
+            desktop.browse(java.net.URI.create(url));
+        }
+        catch(IOException ex){
+            System.out.println("error");
+        }
+    }
+    
+    private void onHoverLink(JLabel link){
+        link.setForeground(Color.YELLOW);
+    }
+    private void offHoverLink(JLabel link){
+        link.setForeground(Color.WHITE);
+    }
+    // ==========================================
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JScrollBar jScrollBar1;
-    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JLabel resource1;
+    private javax.swing.JLabel resource2;
+    private javax.swing.JLabel resource3;
     // End of variables declaration//GEN-END:variables
 }
