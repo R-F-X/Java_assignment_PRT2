@@ -15,7 +15,7 @@ public class FrameLogin extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
+        icon1 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         exitIcon = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -39,29 +39,26 @@ public class FrameLogin extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(150, 185, 12));
         jLabel4.setText("Wellness Wave");
 
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\simple-coding-setup\\Documents\\programming\\PRT2\\Java_assignment_PRT2\\src\\main\\java\\com\\mycompany\\mainapp\\icons\\icons8-brain-100.png")); // NOI18N
+        icon1.setForeground(new java.awt.Color(255, 255, 255));
+        icon1.setText("for icon");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(97, 97, 97)
-                        .addComponent(jLabel5))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(65, 65, 65)
-                        .addComponent(jLabel4)))
+                .addGap(65, 65, 65)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(icon1, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel4))
                 .addContainerGap(75, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel5)
-                .addGap(27, 27, 27)
+                .addComponent(icon1, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(72, 72, 72)
                 .addComponent(jLabel4)
                 .addGap(167, 167, 167))
         );
@@ -213,7 +210,7 @@ public class FrameLogin extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void exitIconMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_exitIconMouseClicked
-         int optionCode = JOptionPane.showConfirmDialog(null,
+        int optionCode = JOptionPane.showConfirmDialog(null,
                 "Are you sure you want to exit?",
                 "Exit",
                 JOptionPane.PLAIN_MESSAGE);
@@ -262,11 +259,11 @@ public class FrameLogin extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel exitIcon;
+    private javax.swing.JLabel icon1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
