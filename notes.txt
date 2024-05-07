@@ -1,0 +1,27 @@
+
+NOTES
+-----
+- using Maven build tool and dependencies
+- use labels instead of buttons in all cases
+- only use the JFrame format (not the JPanel) to create GUIs
+- 
+
+(me)
+- when adding files to the main branch, download all the branches and add the 
+files manually
+- 
+---
+
+
+
+aspect ratio and dimensions 
+16:9 
+- login         
+- sign up 
+- questionnaire
+- billing
+
+
+fonts? 
+- Yu Gothic 
+
