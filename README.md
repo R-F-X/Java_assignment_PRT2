@@ -1,15 +1,15 @@
 # Program:	Wellness Wave
 __Description__ 	
-_Desktop app to help people with mental-health challenges_
+> _Desktop app to help people with mental-health challenges_
 - Started:	06.05.24
-- Updated: 	07.05.24
+- Updated: 	08.05.24
 - Developers
 	* ![Kyran]("https://github.com/kyran-325") 
-	* [Joshua] ()
-	* Princess
-	* Kelsey-Jane
-	* Caitlin
-	* ![RFX](https://github.com/R-F-X)
+	* ![Joshua] (https://github.com/JoshuaTwigg)
+	* ![Princess](https://github.com/PrincessUgbobuaku)
+	* ![Kelsey-Jane](https://github.com/BugAches)
+	* ![Caitlin](https://github.com/MissBabyRose28)
+	* ![RFX](https://github.com/R-F-X, "profile")
 
 - Status:	work-in-progress
 ---
