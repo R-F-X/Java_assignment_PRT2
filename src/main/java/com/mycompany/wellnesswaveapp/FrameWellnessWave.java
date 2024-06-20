@@ -2,17 +2,23 @@ package com.mycompany.wellnesswaveapp;
 
 import java.awt.Color;
 import java.awt.Toolkit;
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;
-
 
 import javax.swing.JLabel; 
+import javax.swing.JOptionPane;
+import java.awt.Image; 
+import javax.swing.ImageIcon;
 
 public class FrameWellnessWave extends javax.swing.JFrame {
 
     public FrameWellnessWave() {
         initComponents();
-//        setIcon1();
+//        setIconImage();
+        
+//        Image icon = new ImageIcon(this.getClass().getResource("images/icons8-url-96.png")).getImage(); 
+//        this.setIconImage(icon);
+
+//        ("images/icons8-url-96.png")));
+//        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("icons8-url-96.png")));
     }
 
     
@@ -380,7 +386,7 @@ public class FrameWellnessWave extends javax.swing.JFrame {
 
     private void homeLBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_homeLBtnMouseClicked
         jTabbedPane1.setSelectedIndex(0);
-         homeLBtn.setBackground(Color.YELLOW);
+        homeLBtn.setBackground(Color.YELLOW);
         homeLBtn.setForeground(Color.BLACK);
 //        homeLBtn.setBackground(Color.red);
 //        homeLBtn.setForeground(Color.WHITE);
@@ -471,20 +477,7 @@ public class FrameWellnessWave extends javax.swing.JFrame {
     }
     
     // add custom icon
-//     private void setIconImage() {
-//       setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("images/icons8-url-96.png")));
-//    }
-//     
-//    private void setIcon1() {
-////        String icon = "icons\\profile.png";
-////        String icon = "icons/profile.png";
-//
-////        String icon = "//    C:\\Users\\simple-coding-setup\\Documents\\programming\\PRT2\\MainApp\\src\\main\\java\\com\\mycompany\\mainapp\\icons\\profile.png\n";
-//
-//        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("icons/profile.png")));
-//    }
     
-//    C:\Users\simple-coding-setup\Documents\programming\PRT2\MainApp\src\main\java\com\mycompany\mainapp\icons\profile.png
     // ==========================================================
     
     // MAIN
@@ -526,6 +519,16 @@ public class FrameWellnessWave extends javax.swing.JFrame {
             }
         });
     }
+    
+    // add custom icon
+     private void setIconImage() {
+//         setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("images/icons8-url-96.png")));
+//        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("icons8-url-96.png")));
+
+        setIconImage(Toolkit.getDefaultToolkit().getImage("icons8-url-96.png"));
+
+    }
+     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Sidebar;
